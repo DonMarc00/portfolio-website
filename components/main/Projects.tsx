@@ -13,13 +13,13 @@ const Projects = () => {
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
           src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="Vue WYSIWYG Editor"
+          description="My latest enterprise project that is already being used by customers in production enviornments."
         />
         <ProjectCard
           src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          title="Flutter App"
+          description="Sometimes when I am to focused on my work I tend to forget to drink throughout the day. A solution was required..."
         />
         <ProjectCard
           src="/SpaceWebsite.png"

@@ -14,17 +14,17 @@ return (
 const events: Event[] = [
     {
       heading: '2021-Present: ELO Digital Office GmbH',
-      subHeading: 'Working at ELO as a Fullstack-Developer.',
+      subHeading: 'Working at ELO as a Fullstack-Developer. (Currently working on my bachelor thesis in AI)',
       direction: 'left'
     },
     {
-      heading: '2021-Present: DHBW Stuttgart (Wirtschaftsinformatik)',
-      subHeading: 'Studying Business at DHBW Stuttgart and currently working on my bachelor thesis.',
+      heading: '2021-Present: DHBW Stuttgart',
+      subHeading: 'Studying Business Informatics at the DHBW Stuttgart.',
       direction: 'right'
     },
     {
       heading: '2013-2021: Allgemeine Hochschulreife',
-      subHeading: 'Abitur am Stiftsgymnasium Sindelfingen.',
+      subHeading: 'Abitur at the Stiftsgymnasium Sindelfingen.',
       direction: 'left'
     }
   ]

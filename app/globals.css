@@ -7,7 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
+:root {
+  --card-color: linear-gradient(
+    180deg,
+    rgba(60, 8, 126, 0) 0%,
+    rgba(60, 8, 126, 0.32) 100%
+  ),;
+}
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
@@ -69,14 +75,19 @@
 }
 
 .event-card{
-  background-color: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    180deg,
+    rgba(60, 8, 126, 0) 0%,
+    rgba(60, 8, 126, 0.32) 100%
+  ),
+  rgba(113, 47, 255, 0.12);;
   border-radius: 10px;
   cursor: pointer;
   display: flex;
-  height: 260px;
+  height: 190px;
   flex-direction: column;
   position: relative;
-  width: 300px; 
+  width: 320px; 
 }
 
 .event-card:hover::before {
@@ -99,7 +110,7 @@
 .event-card::before {
   background: radial-gradient(
     800px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.06),
+    rgba(255, 255, 255, 0.1),
     transparent 40%
   );
   z-index: 33;
@@ -118,6 +129,7 @@
   background-color: var(--card-color);
   border-radius: inherit;
   display: flex;
+  margin: 1px;;
   flex-direction: column;
   flex-grow: 1;
   inset: 1px;

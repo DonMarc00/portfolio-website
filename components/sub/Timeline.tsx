@@ -40,7 +40,7 @@ const Timeline = ({events}: TimelineProps) => {
   const Circle = () => {
     return (
       <motion.div 
-        className='bg-gradient-to-r from-blue-500 to-teal-500 rounded-full w-4 h-4 mx-auto'
+        className='bg-gradient-to-r from-purple-900 to-violet-700 rounded-full w-4 h-4 mx-auto'
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -56,8 +56,8 @@ const Timeline = ({events}: TimelineProps) => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}>
           <div className="card-content">
-        <div className='text-white font-bold text-lg border-b'>{heading}</div>
-        <div className='text-sm text-gray-700'>{subHeading}</div></div>
+        <div className='text-white font-bold text-lg border-b p-2'>{heading}</div>
+        <div className='text-sm text-white p-3'>{subHeading}</div></div>
       </motion.div>
     )
   }
@@ -65,7 +65,7 @@ const Timeline = ({events}: TimelineProps) => {
   const Pillar = () => {
     return (
       <motion.div 
-        className='bg-gradient-to-b from-blue-500 to-teal-500 rounded-t-full rounded-b-full w-2 h-full mx-auto'
+        className='bg-gradient-to-b from-purple-950 to-violet-700 rounded-t-full rounded-b-full w-2 h-full mx-auto'
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

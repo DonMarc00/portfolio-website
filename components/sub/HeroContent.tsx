@@ -9,6 +9,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Spline from "@splinetool/react-spline";
 
 const HeroContent = () => {
   return (
@@ -56,17 +57,7 @@ const HeroContent = () => {
         </motion.a>
       </div>
 
-      <motion.div
-        variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
-      >
-        <Image
-          src="/mainIconsdark.svg"
-          alt="work icons"
-          height={650}
-          width={650}
-        />
-      </motion.div>
+      <Spline className='z-[1000]'scene="https://prod.spline.design/HMdyIm8draRO3-2A/scene.splinecode" />
     </motion.div>
   );
 };

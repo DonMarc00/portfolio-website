@@ -1,10 +1,12 @@
+"use client"
 import Timeline from "@/components/sub/Timeline";
 import React from "react";
+import { isMobile } from "react-device-detect";
 
 export default function page() {
 return (
-    <div className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]">
-        <h2 className="flex flex-col gap-6 mt-6 text-5xl font-bold text-white max-w-[600px] w-auto h-auto">
+    <div className="flex flex-col items-center justify-center px-20 mt-40 h-full w-full z-[20] overflow-hidden">
+        <h2 className="flex flex-col sm:flex-row gap-6 mt-6 text-5xl font-bold text-white max-w-[600px] w-auto h-auto">
             Have a look at my vita to see where I am comming from.</h2>
         <Timeline events={events} />
     </div>
@@ -20,7 +22,7 @@ const events: Event[] = [
     {
       heading: '2021-Present: DHBW Stuttgart',
       subHeading: 'Studying Business Informatics at the DHBW Stuttgart.',
-      direction: 'right'
+      direction: (isMobile ? 'left' : 'right')
     },
     {
       heading: '2013-2021: Allgemeine Hochschulreife',

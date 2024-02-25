@@ -56,8 +56,7 @@ const HeroContent = () => {
           Learn More!
         </motion.a>
       </div>
-
-      <Spline className='z-[1000]'scene="https://prod.spline.design/HMdyIm8draRO3-2A/scene.splinecode" />
+      <Spline className='z-[40] h-full w-full'scene="https://prod.spline.design/HMdyIm8draRO3-2A/scene.splinecode" />
     </motion.div>
   );
 };

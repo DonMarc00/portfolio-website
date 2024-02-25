@@ -1,6 +1,7 @@
 "use client"
 import React, { Fragment, useEffect, useRef } from 'react'
 import { motion } from "framer-motion";
+import {isMobile} from 'react-device-detect';
 
 type TimelineProps = {
   events: Event[];
@@ -51,7 +52,7 @@ const Timeline = ({events}: TimelineProps) => {
   const EventCard = ({heading, subHeading, direction}: EventCardProps) => {
 
     return (
-      <motion.div className='event-card flex flex-col gap-y-2 shadow-white rounded-lx p-4 z-[30] '
+      <motion.div className='event-card sm:w-72 sm:h-48 w-60 h-52 flex flex-col gap-y-2 shadow-white rounded-lx p-4 z-[30] '
       initial={{ opacity: 0, x: direction === 'left' ? -100 : 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5 }}>
@@ -86,7 +87,7 @@ const Timeline = ({events}: TimelineProps) => {
               (
                 <div></div>
               )}
-              <Pillar />
+              {!isMobile && <Pillar />}
               {event.direction === 'right' ? (
                 <EventCard heading={event.heading} subHeading={event.subHeading} direction='right'/>
               ) :

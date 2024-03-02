@@ -27,23 +27,6 @@ const Projects = () => {
           description="You have to present yourself in a unique way."
         />
       </div>
-      <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-      <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Homelab-Server"
-          description="Moving away from comercial cloud providers, hosting my own services and serving my website localy. For that I am running a homelab server. Aside from that it is also a great learning experience for networking."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Intelligent E-Mail client concept"
-          description="."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-      </div>
     </div>
     
   );

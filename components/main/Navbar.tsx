@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
                 <Link href="timeline" className="cursor-pointer">Timeline</Link>
                 <a href="#skills" className="cursor-pointer">Skills</a>
-                <a href="#projects" className="cursor-pointer">Projects</a>
+                <Link href="projects" className='cursor-pointer'>Projects</Link>
             </div>
            </div>
            <div className="flex flex-row gap-5">

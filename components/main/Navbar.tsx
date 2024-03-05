@@ -7,7 +7,8 @@ const Navbar = () => {
   return (
     <div className='w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417 backdrop-blur-md z-50 px-10'>
         <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-            <a href="#about-me" className="h-auto w-auto flex flex-row items-center">
+          {/* FIXME: If I change the anchor to a Link, the root page changes to some sort of light mode */}
+            <a href="/" className="h-auto w-auto flex flex-row items-center">
                 <Image src="/NavLogo.png" width={70} height={70} alt="Logo" className='cursor-pointer hover:animate-slowspin'/>
                 <span className='font-bold ml-[10px] hidden md:block text-gray-300'>
                     Marc Novak

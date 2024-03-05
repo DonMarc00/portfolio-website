@@ -7,8 +7,8 @@ import Navbar from "@/components/main/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Marc Novak - Portfolio",
-  description: "This is my portfolio",
+  title: "Marc Novak - Project",
+  description: "Those are some projects I worked on over the past few months",
 };
 
 export default function RootLayout({
@@ -21,6 +21,6 @@ export default function RootLayout({
         <StarsCanvas applyZIndex={false}/>
         <Navbar/>
         {children}
-        </body>
+      </body>
   );
 }

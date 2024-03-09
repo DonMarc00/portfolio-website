@@ -19,12 +19,12 @@ const Projects = () => {
         <ProjectCard
           src="/CardImage.png"
           title="Flutter App"
-          description="Sometimes when I am to focused on my work I tend to forget to drink throughout the day. A solution was required... This project was used to learn about test-driven development and CI/CD."
+          description="My latest enterprise project that is already being used by customers in production enviornments. A collaborative editor inspired by Notion. "
         />
         <ProjectCard
           src="/SpaceWebsite.png"
           title="Portfolio Website"
-          description="You have to present yourself in a unique way."
+          description="My latest enterprise project that is already being used by customers in production enviornments. A collaborative editor inspired by Notion. "
         />
       </div>
     </div>

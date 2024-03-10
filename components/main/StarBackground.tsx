@@ -6,6 +6,7 @@ import { Points, PointMaterial, Preload } from '@react-three/drei';
 // @ts-ignore
 import * as random from 'maath/random/dist/maath-random.esm';
 import { group } from 'console';
+import { usePathname } from 'next/navigation';
 
 const StarBackground = (props: any) => {
     const ref: any = useRef();
@@ -35,10 +36,11 @@ const StarBackground = (props: any) => {
     )
 };
 
-const StarsCanvas = ({ applyZIndex = true }) => {
-    const zIndexClass = applyZIndex ? "z-[20]" : "";
+const StarsCanvas = () => {
+    const pathname = usePathname();
+    const isRouteProjects = pathname == '/projects'
     return (
-        <div className={`w-full h-auto fixed inset-0 ${zIndexClass}`}>
+        <div className={`w-full h-auto fixed inset-0 ${!isRouteProjects}`}>
             <Canvas camera={{ position: [0, 0, 1] }}>
                 <Suspense fallback={null}>
                     <StarBackground />

@@ -152,6 +152,67 @@
   rgba(113, 47, 255, 0.12);
 }
 
+/* For project info */
+.info-card{
+  background: linear-gradient(
+    180deg,
+    rgba(71, 24, 133, 0.533) 0%,
+    rgba(60, 8, 126, 0.32) 100%
+  ),
+  rgba(113, 47, 255, 0.12);
+  border: #9cb2ff;
+  cursor: pointer;
+  position: relative;
+}
+
+.info-card:hover::before {
+  opacity: 1;
+}
+
+.info-card::before,
+.info-card::after {
+  border-radius: inherit;
+  content: "";
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  transition: opacity 500ms;
+  width: 100%;
+}
+
+.info-card::before {
+  background: radial-gradient(
+    800px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.2),
+    transparent 40%
+  );
+  z-index: 33;
+}
+
+.info-card::after {  
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y), 
+    rgba(255, 255, 255, 0.4),
+    transparent 40%
+  );
+  z-index: 31;
+}
+
+.info-card > .card-content {
+  background-color: var(--card-color);
+  border-radius: inherit;
+  display: flex;
+  margin: 1px;;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 10px;
+  position: absolute;
+  z-index: 32;
+}
+
 html {
   scroll-behavior: smooth;
 }

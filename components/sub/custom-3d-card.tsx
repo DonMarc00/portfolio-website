@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { CardBody, CardContainer, CardItem } from '@/components/sub/3d-card';
+import Link from 'next/link';
 
 interface Custom3dCardProps {
     title: string;
@@ -18,14 +19,14 @@ const Custom3dCard = ({title, body, src}: Custom3dCardProps) => {
         <CardBody className="card-body  relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-[#422f67] border-[#2A0E61] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border m-2 ">
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white"
+            className="text-xl font-bold text-white dark:text-white"
           >
             {title}
           </CardItem>
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            className="text-white text-sm max-w-sm mt-2 dark:text-neutral-300"
           >
             {body}
           </CardItem>
@@ -42,16 +43,11 @@ const Custom3dCard = ({title, body, src}: Custom3dCardProps) => {
             <CardItem
               translateZ={20}
               as="button"
-              className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+              className="px-4 py-2 rounded-xl text-xs font-normal text-white dark:text-white"
             >
+              <Link href={'/projects/flutter'}>
               Try now →
-            </CardItem>
-            <CardItem
-              translateZ={20}
-              as="button"
-              className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-            >
-              Sign up
+              </Link>
             </CardItem>
           </div>
         </CardBody>

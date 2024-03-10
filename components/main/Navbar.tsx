@@ -21,9 +21,9 @@ const Navbar = () => {
             </button>
             {menuOpen ? (
               <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full md:w-[500px] h-auto md:h-full md:visible bg-[#030014e8] md:bg-transparent py-4 md:py-0 absolute top-full left-0 z-50 md:static md:shadow-none shadow-md text-white">
-                <Link href="/" className="py-2 md:py-0 md:mx-2 block text-center hover:text-blue-500">Home</Link>
+                <Link href="/" className="py-2 md:py-0 md:mx-2 block text-center ">Home</Link>
                 <Link href="/timeline" className="py-2 md:py-0 md:mx-2 block text-center">Timeline</Link>
-                <a href="#skills" className="py-2 md:py-0 md:mx-2 block text-center">Skills</a>
+                <a href="/skills" className="py-2 md:py-0 md:mx-2 block text-center">Skills</a>
                 <Link href="/projects" className="py-2 md:py-0 md:mx-2 block text-center">Projects</Link>
               </div>
            ) : (
@@ -31,7 +31,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
                     <Link href="/">Home</Link>
                     <Link href="/timeline">Timeline</Link>
-                    <a href="#skills">Skills</a>
+                    <a href="/skills">Skills</a>
                     <Link href="/projects">Projects</Link>
                 </div>
              </div>

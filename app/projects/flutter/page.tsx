@@ -24,7 +24,7 @@ const ProjectPage = () => {
       projectDescription="This project is a water reminder app that helps users stay hydrated by sending timely notifications. It was a great opportunity to learn about push notifications and background tasks on mobile devices. "
       minorDescriptionLeft="Additional features included user customization and tracking water intake over time."
       minorDescriptionRight="Future updates will include integration with health tracking platforms."
-      imagePath="/NextWebsite.png"/>
+      imagePath="/ph20.webp"/>
   );
 };
 

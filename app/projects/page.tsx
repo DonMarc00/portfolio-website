@@ -5,12 +5,12 @@ const Custom3dCard = dynamic(() => import('@/components/sub/custom-3d-card'), { 
 
 export default function page() {
   return (
-    <main className='h-full w-full'>
+    <div className='h-full w-full'>
     <div className='flex flex-row justify-center flex-wrap pt-20'>
       <Custom3dCard 
       title='Demo'
       body='This is a 3d card wow!'
-      src='/NextWebsite.png' />
+      src='/ph20.webp' />
       <Custom3dCard 
       title='Demo'
       body='This is a 3d card wow!'
@@ -32,6 +32,6 @@ export default function page() {
       body='This is a 3d card wow!'
       src='/NextWebsite.png' />  
     </div>
-    </main>
+    </div>
   )
 }

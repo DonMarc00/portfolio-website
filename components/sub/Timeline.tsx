@@ -29,7 +29,6 @@ const Timeline = ({events}: TimelineProps) => {
           const rect = card.getBoundingClientRect(),
                 x = e.clientX - rect.left,
                 y = e.clientY - rect.top;
-                console.log(x, y);
 
           (card as HTMLElement).style.setProperty("--mouse-x", `${x}px`);
           (card as HTMLElement).style.setProperty("--mouse-y", `${y}px`);

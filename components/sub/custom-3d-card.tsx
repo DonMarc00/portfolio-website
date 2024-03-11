@@ -46,7 +46,7 @@ const Custom3dCard = ({title, body, src}: Custom3dCardProps) => {
               className="px-4 py-2 rounded-xl text-xs font-normal text-white dark:text-white"
             >
               <Link href={'/projects/flutter'}>
-              Try now →
+              Learn More →
               </Link>
             </CardItem>
           </div>

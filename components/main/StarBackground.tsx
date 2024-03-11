@@ -40,7 +40,7 @@ const StarsCanvas = () => {
     const pathname = usePathname();
     const isRouteProjects = pathname == '/projects'
     return (
-        <div className={`w-full h-auto fixed inset-0 ${!isRouteProjects}`}>
+        <div className={`w-full h-auto fixed inset-0 ${!isRouteProjects ? "z-[20]" : ""}`}>
             <Canvas camera={{ position: [0, 0, 1] }}>
                 <Suspense fallback={null}>
                     <StarBackground />

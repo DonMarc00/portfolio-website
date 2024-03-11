@@ -8,6 +8,7 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Spline from "@splinetool/react-spline";
+import Link from "next/link";
 
 const HeroContent = () => {
   return (
@@ -51,7 +52,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Learn More!
+          <Link href='/skills'>Learn More</Link>
         </motion.a>
       </div>
       <Spline className='z-[40] h-full w-full overflow-visible'scene="https://prod.spline.design/HMdyIm8draRO3-2A/scene.splinecode" />

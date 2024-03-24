@@ -58,12 +58,12 @@ const ProjectInfo: React.FC<ProjectInfoProps> = ({
   }, []);
   return (
     <div className="container mx-auto mt-20 md:mt-40 px-4 text-white z-[30]" id='elems'>
-      <div className="fixed top-24 left-16 text-white underline z-[30]">
-        <RxArrowLeft/>
+      <div className="relative md:fixed group md:top-24 md:left-16 text-white z-[30]">
         <Link href="/projects">
-        Back
+        ← Back
+        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-violet-900"></span>
         </Link>
-        </div>
+      </div>
       <div className="flex flex-wrap -mx-4 overflow-visible lg:-mx-4 xl:-mx-4">
   
         <motion.div className="info-card rounded-md my-4 mx-2 p-4 w-full overflow-hidden sm:w-full md:mx-0 lg:my-4 lg:px-4 lg:w-1/3 xl:my-4 xl:px-4 xl:w-1/4 z-[31]" whileHover={{scale: 1.05}}>

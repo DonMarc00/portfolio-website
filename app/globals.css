@@ -15,10 +15,6 @@
   ),;
 }
 
-.cursive {
-  font-family: "Cedarville Cursive", cursive;
-}
-
 .wrapper {
   max-width: calc(100vh * 16 / 9);
   margin-left: auto;
@@ -89,7 +85,6 @@
   ),
   rgba(113, 47, 255, 0.12);
   border-radius: 10px;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -161,7 +156,6 @@
   ),
   rgba(113, 47, 255, 0.12);
   border: #9cb2ff;
-  cursor: pointer;
   position: relative;
 }
 

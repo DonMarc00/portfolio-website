@@ -9,8 +9,9 @@ const Projects = () => {
       id="projects"
     >
       <Link href="/projects">
-      <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20 z-[30] c">
+      <h1 className="group text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20 z-[30]">
         My Projects →
+        <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-gradient-to-r from-purple-500 to-cyan-500 z-[30]"></span>
       </h1>
       </Link>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10 mb-4">

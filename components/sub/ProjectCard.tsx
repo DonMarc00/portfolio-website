@@ -9,14 +9,16 @@ interface Props {
 
 const ProjectCard = ({ src, title, description }: Props) => {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
-      <Image
-        src={src}
-        alt={title}
-        width={670}
-        height={670}
-        className="w-full object-contain"
-      />
+    <div className="flex flex-col justify-between relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] h-full">
+      <div className="w-full h-64 overflow-hidden relative">
+        {/* Image container with fixed height to ensure equal image heights */}
+        <Image
+          src={src}
+          alt={title}
+          layout="fill" // Use fill instead of specifying width and height
+          className="object-cover" // Change to object-cover to ensure images cover the area fully
+        />
+      </div>
 
       <div className="relative p-4">
         <h1 className="text-2xl font-semibold text-white">{title}</h1>

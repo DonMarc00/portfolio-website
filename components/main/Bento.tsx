@@ -35,7 +35,9 @@ export function BentoGridDemo() {
   );
 }
 const Skeleton = ({ src }: { src: string }) => (
-    <Image src={src} alt="" width={0} height={0} sizes="100vw" className="w-full h-full rounded-md bg-white"/>
+  
+    <Image alt="" src={src} height={0} width={0} sizes="100" className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-white"/>
+
 );
 const items = [
   {
